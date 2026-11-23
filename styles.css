@@ -1,14 +1,14 @@
 /* ==================== VARIABLES & RESET ==================== */
 :root {
-  --navy-deep: #040818;
-  --navy-mid: #0a1435;
-  --navy-light: #162658;
-  --silver-bright: #f2f5fb;
-  --silver-soft: #cfd8ea;
-  --silver-muted: #8b9bb9;
-  --pearl-bg: #f8f9fc;
-  --text-dark: #101b3d;
-  --text-muted-dark: #4c5a7a;
+  --navy-deep: #8c200b;
+  --navy-mid: #b82d12;
+  --navy-light: #F54927;
+  --silver-bright: #fff9e6;
+  --silver-soft: #ffe8a3;
+  --silver-muted: #f5d27a;
+  --pearl-bg: #fdfaf5;
+  --text-dark: #9e240c;
+  --text-muted-dark: #8c4a3e;
 
   --font-script: 'Great Vibes', cursive;
   --font-display: 'Cinzel', serif;
@@ -30,7 +30,7 @@ html {
 
 body {
   min-height: 100vh;
-  background: radial-gradient(circle at top, #0f1c45 0%, #030612 75%);
+  background: radial-gradient(circle at top, #F54927 0%, #6e1706 75%);
   color: var(--silver-bright);
   font-family: var(--font-sans);
   display: flex;
@@ -83,7 +83,7 @@ body {
   margin: 0 auto;
   max-width: 440px;
   z-index: 20;
-  background: radial-gradient(circle at 50% 35%, #111e48 0%, #05091a 80%);
+  background: radial-gradient(circle at 50% 35%, #F54927 0%, #7d1b08 80%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +109,7 @@ body {
 
 .cap-badge {
   width: 110px;
-  filter: drop-shadow(0 6px 14px rgba(180, 200, 255, 0.25));
+  filter: drop-shadow(0 6px 14px rgba(235, 195, 95, 0.3));
 }
 
 .cap-svg {
@@ -216,14 +216,14 @@ body {
   filter: drop-shadow(0 4px 8px rgba(4, 8, 24, 0.28));
 }
 
-/* Navy Ribbons on Envelope */
+/* Gold & Crimson Ribbons on Envelope */
 .ribbon-left,
 .ribbon-right {
   position: absolute;
   top: 0;
   width: 6px;
   height: 150px;
-  background: linear-gradient(90deg, #060b1d, #1f3268, #060b1d);
+  background: linear-gradient(90deg, #b82d12, #d4af37, #F54927);
 }
 
 .ribbon-left {
@@ -244,7 +244,7 @@ body {
   bottom: 0;
   width: 6px;
   height: 145px;
-  background: linear-gradient(90deg, #060b1d, #1f3268, #060b1d);
+  background: linear-gradient(90deg, #b82d12, #d4af37, #F54927);
   z-index: 4;
 }
 
@@ -274,7 +274,7 @@ body {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: linear-gradient(145deg, #ffffff, #8f9fbd);
+  background: linear-gradient(145deg, #fff4cc, #b88a28);
   padding: 4px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
   display: flex;
@@ -286,8 +286,8 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, #3d5ca8 0%, #0b1433 65%, #040712 100%);
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: radial-gradient(circle at 35% 30%, #ff795c 0%, #F54927 55%, #8c200b 100%);
+  border: 1px solid rgba(255, 244, 204, 0.45);
 }
 
 .seal-tails {
@@ -300,7 +300,7 @@ body {
 .seal-tails span {
   width: 6px;
   height: 20px;
-  background: linear-gradient(180deg, #0b132b, #233875);
+  background: linear-gradient(180deg, #F54927, #d4af37);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
 }
 
@@ -365,9 +365,9 @@ body {
   position: relative;
   padding: 36px 22px 0;
   background:
-    radial-gradient(circle at 20% 10%, rgba(44, 72, 150, 0.25), transparent 45%),
-    radial-gradient(circle at 80% 35%, rgba(65, 98, 185, 0.18), transparent 50%),
-    linear-gradient(180deg, #050a1e 0%, #0a1435 65%, #0e1c47 100%);
+    radial-gradient(circle at 20% 10%, rgba(255, 224, 130, 0.2), transparent 45%),
+    radial-gradient(circle at 80% 35%, rgba(245, 73, 39, 0.35), transparent 50%),
+    linear-gradient(180deg, #8c200b 0%, #c93416 55%, #F54927 100%);
   text-align: center;
 }
 
@@ -422,7 +422,7 @@ body {
   font-family: var(--font-script);
   font-style: normal;
   font-size: 1.6rem;
-  color: #0b163b;
+  color: #F54927;
 }
 
 .opened-pocket {
@@ -431,7 +431,7 @@ body {
   left: 0;
   right: 0;
   height: 82px;
-  background: linear-gradient(180deg, #e2e9f6 0%, #f7f9fe 100%);
+  background: linear-gradient(180deg, #f8f1e2 0%, #fffcf5 100%);
   clip-path: polygon(0 0, 50% 42%, 100% 0, 100% 100%, 0 100%);
   border-radius: 0 0 6px 6px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
@@ -445,8 +445,8 @@ body {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #4e6ec2, #0b1433);
-  border: 2px solid #dfe6f5;
+  background: radial-gradient(circle at 30% 30%, #ff795c, #F54927);
+  border: 2px solid #e5c158;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
 
@@ -591,7 +591,7 @@ body {
   width: 3px;
   height: 8px;
   border-radius: 3px;
-  background: linear-gradient(180deg, #ffffff, #88a0d1);
+  background: linear-gradient(180deg, #fff7dc, #d4af37);
   opacity: 0.45;
   transition: height 0.2s ease, opacity 0.2s ease;
 }
@@ -777,13 +777,62 @@ body {
 .section-divider span {
   flex: 1;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #b8c4db, transparent);
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
 }
 
 .section-divider i {
   font-style: normal;
   font-size: 0.75rem;
-  color: #6f80a6;
+  color: #b88a28;
+}
+
+/* Clickable Map Card */
+.map-card {
+  display: block;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid #d4af37;
+  box-shadow: 0 10px 26px rgba(66, 7, 19, 0.18);
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.map-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(66, 7, 19, 0.28);
+}
+
+.map-visual {
+  position: relative;
+  width: 100%;
+  height: 155px;
+  background: #f2ece1;
+}
+
+.map-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.map-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(245, 73, 39, 0.94);
+  border: 1px solid #d4af37;
+  color: #fff7dc;
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 /* Pill Buttons */
@@ -793,22 +842,22 @@ body {
   justify-content: center;
   padding: 12px 30px;
   border-radius: 999px;
-  border: none;
-  background: linear-gradient(135deg, #0b1433 0%, #1d2f66 100%);
-  color: #ffffff;
+  border: 1px solid #d4af37;
+  background: linear-gradient(135deg, #c93416 0%, #F54927 100%);
+  color: #fff7dc;
   font-family: var(--font-sans);
   font-size: 0.88rem;
   font-weight: 500;
   letter-spacing: 0.06em;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(11, 20, 51, 0.28);
+  box-shadow: 0 8px 20px rgba(245, 73, 39, 0.32);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .pill-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(11, 20, 51, 0.38);
+  box-shadow: 0 12px 24px rgba(245, 73, 39, 0.45);
 }
 
 .pill-btn:active {
@@ -841,7 +890,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 40;
-  background: rgba(5, 10, 30, 0.88);
+  background: rgba(30, 3, 8, 0.88);
   backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
@@ -914,8 +963,8 @@ body {
 .rsvp-form input:focus,
 .rsvp-form select:focus,
 .rsvp-form textarea:focus {
-  border-color: #1d2f66;
-  box-shadow: 0 0 0 3px rgba(29, 47, 102, 0.12);
+  border-color: #F54927;
+  box-shadow: 0 0 0 3px rgba(245, 73, 39, 0.16);
 }
 
 .submit-btn {

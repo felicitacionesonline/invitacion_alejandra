@@ -46,13 +46,13 @@
           <svg viewBox="0 0 120 80" class="cap-svg" aria-hidden="true">
             <defs>
               <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#ffffff" />
-                <stop offset="45%" stop-color="#cfd9ea" />
-                <stop offset="100%" stop-color="#7c8fb0" />
+                <stop offset="0%" stop-color="#fff4cc" />
+                <stop offset="45%" stop-color="#e5c158" />
+                <stop offset="100%" stop-color="#a67c1e" />
               </linearGradient>
               <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#1d2f5c" />
-                <stop offset="100%" stop-color="#091026" />
+                <stop offset="0%" stop-color="#F54927" />
+                <stop offset="100%" stop-color="#8c200b" />
               </linearGradient>
             </defs>
             <!-- Cap top -->
@@ -237,7 +237,7 @@
           <svg viewBox="0 0 1440 110" preserveAspectRatio="none">
             <path
               d="M0,45 C360,115 1080,-15 1440,55 L1440,110 L0,110 Z"
-              fill="#f8f9fc"
+              fill="#fdfaf5"
             ></path>
           </svg>
         </div>
@@ -251,16 +251,16 @@
             <svg viewBox="0 0 80 64" width="64" height="52" aria-hidden="true">
               <defs>
                 <linearGradient id="darkSilver" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#1e2d56" />
-                  <stop offset="50%" stop-color="#4e628f" />
-                  <stop offset="100%" stop-color="#0b132b" />
+                  <stop offset="0%" stop-color="#F54927" />
+                  <stop offset="50%" stop-color="#d4af37" />
+                  <stop offset="100%" stop-color="#8c200b" />
                 </linearGradient>
               </defs>
               <polygon points="40,8 74,22 40,36 6,22" fill="url(#darkSilver)" />
-              <path d="M20,28 L20,42 C20,49 60,49 60,42 L60,28 L40,36 Z" fill="#131f42" />
-              <line x1="40" y1="22" x2="66" y2="32" stroke="#8a9bbd" stroke-width="1.8" />
-              <line x1="66" y1="32" x2="66" y2="50" stroke="#8a9bbd" stroke-width="1.8" />
-              <circle cx="66" cy="52" r="3" fill="#4e628f" />
+              <path d="M20,28 L20,42 C20,49 60,49 60,42 L60,28 L40,36 Z" fill="#b82d12" />
+              <line x1="40" y1="22" x2="66" y2="32" stroke="#d4af37" stroke-width="1.8" />
+              <line x1="66" y1="32" x2="66" y2="50" stroke="#d4af37" stroke-width="1.8" />
+              <circle cx="66" cy="52" r="3" fill="#d4af37" />
             </svg>
           </div>
           <h2 class="detail-heading">Día &amp; Hora</h2>
@@ -279,15 +279,15 @@
             <svg viewBox="0 0 64 72" width="52" height="58" aria-hidden="true">
               <defs>
                 <linearGradient id="gemFacet1" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#eef2f9" />
-                  <stop offset="50%" stop-color="#98a8c7" />
-                  <stop offset="100%" stop-color="#1c2b52" />
+                  <stop offset="0%" stop-color="#fff4d2" />
+                  <stop offset="50%" stop-color="#d4af37" />
+                  <stop offset="100%" stop-color="#F54927" />
                 </linearGradient>
               </defs>
-              <polygon points="32,4 56,24 32,68 8,24" fill="url(#gemFacet1)" stroke="#1b294d" stroke-width="1.5" />
-              <polygon points="32,4 56,24 32,30 8,24" fill="#d9e2f2" opacity="0.7" />
-              <line x1="32" y1="4" x2="32" y2="68" stroke="#1b294d" stroke-width="1" opacity="0.55" />
-              <line x1="8" y1="24" x2="56" y2="24" stroke="#1b294d" stroke-width="1" opacity="0.55" />
+              <polygon points="32,4 56,24 32,68 8,24" fill="url(#gemFacet1)" stroke="#9e240c" stroke-width="1.5" />
+              <polygon points="32,4 56,24 32,30 8,24" fill="#fce8b2" opacity="0.7" />
+              <line x1="32" y1="4" x2="32" y2="68" stroke="#9e240c" stroke-width="1" opacity="0.55" />
+              <line x1="8" y1="24" x2="56" y2="24" stroke="#9e240c" stroke-width="1" opacity="0.55" />
             </svg>
           </div>
           <h2 class="detail-heading">Ubicación</h2>
@@ -298,9 +298,38 @@
             href="https://maps.app.goo.gl/GHW4QkNo954bJy1aA"
             target="_blank"
             rel="noopener noreferrer"
-            class="pill-btn"
+            class="map-card"
+            aria-label="Abrir ubicación en Google Maps"
           >
-            Ver ubicación en mapa
+            <div class="map-visual" aria-hidden="true">
+              <svg viewBox="0 0 360 170" class="map-svg" preserveAspectRatio="xMidYMid slice">
+                <!-- Map base -->
+                <rect width="360" height="170" fill="#f2ece1" />
+                <!-- Green park areas -->
+                <rect x="18" y="18" width="84" height="52" rx="8" fill="#dce6cf" />
+                <rect x="252" y="96" width="90" height="58" rx="8" fill="#dce6cf" />
+                <!-- Secondary streets -->
+                <path d="M0,45 L360,45 M0,122 L360,122 M85,0 L85,170 M215,0 L215,170 M300,0 L300,170" stroke="#e4dccb" stroke-width="5" fill="none" />
+                <!-- Main avenues -->
+                <path d="M-10,92 Q120,68 185,88 T370,74" stroke="#ffffff" stroke-width="11" fill="none" />
+                <path d="M-10,92 Q120,68 185,88 T370,74" stroke="#e6d3a7" stroke-width="1.5" fill="none" />
+                <path d="M150,-10 L178,180" stroke="#ffffff" stroke-width="10" fill="none" />
+                <path d="M150,-10 L178,180" stroke="#e6d3a7" stroke-width="1.5" fill="none" />
+                <!-- Pin shadow -->
+                <ellipse cx="180" cy="108" rx="16" ry="6" fill="rgba(184,45,18,0.25)" />
+                <!-- Pulse ring -->
+                <circle cx="180" cy="106" r="20" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.55" />
+                <!-- Location Pin -->
+                <path
+                  d="M180,34 C162,34 148,48 148,66 C148,88 180,108 180,108 C180,108 212,88 212,66 C212,48 198,34 180,34 Z"
+                  fill="#F54927"
+                  stroke="#d4af37"
+                  stroke-width="2.5"
+                />
+                <circle cx="180" cy="65" r="10" fill="#fff7dc" />
+              </svg>
+              <span class="map-badge">Abrir en Google Maps ↗</span>
+            </div>
           </a>
         </article>
 

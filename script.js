@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(235, 242, 255, ${p.alpha})`;
+      ctx.fillStyle = `rgba(255, 236, 178, ${p.alpha})`;
       ctx.fill();
     }
     requestAnimationFrame(animateSparkles);
