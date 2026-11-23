@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación de Graduación — Alejandra Vaca Flores</title>
+  <meta name="description" content="Estás invitado a la graduación de Alejandra Vaca Flores. Sábado 12 de diciembre, 7:00 PM." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background ambient particles -->
+  <canvas id="sparkle-canvas" aria-hidden="true"></canvas>
+
+  <main class="phone-frame">
+    <!-- ==================== PANTALLA 1: SOBRE CERRADO ==================== -->
+    <section id="cover-screen" class="cover-screen active" aria-label="Portada de invitación">
+      <div class="cover-content">
+        <!-- Graduation Cap Icon -->
+        <div class="cap-badge fade-in-down">
+          <svg viewBox="0 0 120 80" class="cap-svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffffff" />
+                <stop offset="45%" stop-color="#cfd9ea" />
+                <stop offset="100%" stop-color="#7c8fb0" />
+              </linearGradient>
+              <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1d2f5c" />
+                <stop offset="100%" stop-color="#091026" />
+              </linearGradient>
+            </defs>
+            <!-- Cap top -->
+            <polygon points="60,12 112,32 60,52 8,32" fill="url(#silverGrad)" stroke="#ffffff" stroke-width="1.2" />
+            <polygon points="60,16 104,32 60,48 16,32" fill="url(#navyGrad)" opacity="0.85" />
+            <!-- Cap base -->
+            <path d="M30,41 L30,58 C30,66 90,66 90,58 L90,41 L60,52 Z" fill="url(#navyGrad)" stroke="url(#silverGrad)" stroke-width="1.2" />
+            <!-- Tassel -->
+            <line x1="60" y1="32" x2="96" y2="44" stroke="url(#silverGrad)" stroke-width="2" />
+            <line x1="96" y1="44" x2="96" y2="66" stroke="url(#silverGrad)" stroke-width="2" />
+            <circle cx="96" cy="68" r="3.5" fill="url(#silverGrad)" />
+            <circle cx="60" cy="32" r="3" fill="url(#silverGrad)" />
+            <!-- Sparkles -->
+            <path d="M20,16 L22,20 L26,22 L22,24 L20,28 L18,24 L14,22 L18,20 Z" fill="#ffffff" opacity="0.85" />
+            <path d="M102,14 L103,17 L106,18 L103,19 L102,22 L101,19 L98,18 L101,17 Z" fill="#ffffff" opacity="0.75" />
+          </svg>
+        </div>
+
+        <p class="script-subtitle fade-in-down">
+          Estás invitado a la<br />ceremonia de graduación...
+        </p>
+
+        <!-- Interactive Sealed Envelope -->
+        <button
+          id="open-envelope-btn"
+          class="envelope-wrapper"
+          type="button"
+          aria-label="Abrir invitación de graduación"
+        >
+          <div class="envelope-3d" id="envelope-3d">
+            <!-- Back & Interior -->
+            <div class="env-back"></div>
+            <div class="env-letter-peek">
+              <span>Alejandra Vaca Flores</span>
+            </div>
+            <!-- Left & Right & Bottom Flaps -->
+            <div class="env-flap-left"></div>
+            <div class="env-flap-right"></div>
+            <div class="env-flap-bottom"></div>
+            <!-- Top Flap -->
+            <div class="env-flap-top">
+              <div class="ribbon-left"></div>
+              <div class="ribbon-right"></div>
+            </div>
+            <!-- Ribbon Cross & Gem Seal -->
+            <div class="ribbon-bottom-left"></div>
+            <div class="ribbon-bottom-right"></div>
+            <div class="env-seal" aria-hidden="true">
+              <div class="seal-ring">
+                <div class="seal-gem"></div>
+              </div>
+              <div class="seal-tails">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </button>
+
+        <button id="open-text-btn" class="click-to-open" type="button">
+          CLICK PARA ABRIR ...
+        </button>
+      </div>
+    </section>
+
+    <!-- ==================== PANTALLA 2: INVITACIÓN PRINCIPAL ==================== -->
+    <section id="invitation-screen" class="invitation-screen" aria-label="Detalles de la graduación">
+      <!-- TOP DARK NAVY SECTION -->
+      <div class="top-navy-section">
+        <!-- Opened Envelope Header -->
+        <div class="opened-envelope-header reveal">
+          <div class="opened-env-graphic">
+            <div class="opened-flap"></div>
+            <div class="opened-card">
+              <p class="opened-card-script">Estás invitado a la<br />ceremonia de<br /><span>Graduación</span></p>
+            </div>
+            <div class="opened-pocket">
+              <div class="opened-seal"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class of 2026 Emblem -->
+        <div class="class-emblem reveal">
+          <div class="emblem-line"></div>
+          <div class="emblem-badge">
+            <span class="emblem-top">PROMO</span>
+            <span class="emblem-year">2026</span>
+          </div>
+          <div class="emblem-line"></div>
+        </div>
+
+        <!-- Graduate Name -->
+        <div class="graduate-header reveal">
+          <h1 class="graduate-name">Alejandra<br />Vaca Flores</h1>
+          <p class="graduate-subtitle">
+            Con alegría y gratitud por este gran logro
+          </p>
+        </div>
+
+        <!-- Polaroid Photo Collage -->
+        <div class="polaroid-gallery reveal">
+          <figure class="polaroid polaroid-left" data-photo="alejandra.jpeg" data-caption="Alejandra Vaca Flores — Promo 2026">
+            <div class="polaroid-img-box">
+              <img src="alejandra.jpeg" alt="Alejandra Vaca Flores celebrando con globos" loading="lazy" />
+            </div>
+            <figcaption>¡Lo logré!</figcaption>
+          </figure>
+
+          <figure class="polaroid polaroid-right" data-photo="alenadra con mama.jpeg" data-caption="Alejandra junto a su mamá">
+            <div class="polaroid-img-box">
+              <img src="alenadra con mama.jpeg" alt="Alejandra Vaca Flores junto a su mamá" loading="lazy" />
+            </div>
+            <figcaption>Momentos inolvidables</figcaption>
+          </figure>
+        </div>
+
+        <!-- Audio Player Widget -->
+        <audio id="bg-music" src="musica.mp3" loop preload="auto"></audio>
+        <div class="music-player reveal" aria-label="Reproductor de música">
+          <div class="waveform" id="waveform" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="player-controls">
+            <button id="restart-audio-btn" class="ctrl-btn" type="button" title="Reiniciar melodía" aria-label="Reiniciar melodía">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
+              </svg>
+            </button>
+            <button id="play-pause-btn" class="ctrl-btn play-btn" type="button" title="Reproducir o pausar música" aria-label="Reproducir o pausar música">
+              <svg id="icon-play" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              <svg id="icon-pause" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" class="hidden">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+              </svg>
+            </button>
+            <button id="mute-audio-btn" class="ctrl-btn" type="button" title="Silenciar" aria-label="Silenciar">
+              <svg id="icon-vol" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
+              </svg>
+              <svg id="icon-mute" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" class="hidden">
+                <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Countdown Section -->
+        <div class="countdown-block reveal">
+          <p class="celebrate-script">Queremos celebrar contigo</p>
+          <p class="celebrate-caps">ESTE DÍA TAN ESPECIAL...</p>
+
+          <div class="countdown-grid" id="countdown-grid" aria-live="polite">
+            <div class="cd-item">
+              <span class="cd-num" id="cd-days">00</span>
+              <span class="cd-label">DÍAS</span>
+            </div>
+            <span class="cd-sep">:</span>
+            <div class="cd-item">
+              <span class="cd-num" id="cd-hours">00</span>
+              <span class="cd-label">HORAS</span>
+            </div>
+            <span class="cd-sep">:</span>
+            <div class="cd-item">
+              <span class="cd-num" id="cd-mins">00</span>
+              <span class="cd-label">MINUTOS</span>
+            </div>
+            <span class="cd-sep">:</span>
+            <div class="cd-item">
+              <span class="cd-num" id="cd-secs">00</span>
+              <span class="cd-label">SEGUNDOS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curved Divider -->
+        <div class="wave-divider" aria-hidden="true">
+          <svg viewBox="0 0 1440 110" preserveAspectRatio="none">
+            <path
+              d="M0,45 C360,115 1080,-15 1440,55 L1440,110 L0,110 Z"
+              fill="#f8f9fc"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- BOTTOM LIGHT PEARL SECTION -->
+      <div class="bottom-light-section">
+        <!-- Date & Time -->
+        <article class="detail-block reveal">
+          <div class="detail-icon">
+            <svg viewBox="0 0 80 64" width="64" height="52" aria-hidden="true">
+              <defs>
+                <linearGradient id="darkSilver" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1e2d56" />
+                  <stop offset="50%" stop-color="#4e628f" />
+                  <stop offset="100%" stop-color="#0b132b" />
+                </linearGradient>
+              </defs>
+              <polygon points="40,8 74,22 40,36 6,22" fill="url(#darkSilver)" />
+              <path d="M20,28 L20,42 C20,49 60,49 60,42 L60,28 L40,36 Z" fill="#131f42" />
+              <line x1="40" y1="22" x2="66" y2="32" stroke="#8a9bbd" stroke-width="1.8" />
+              <line x1="66" y1="32" x2="66" y2="50" stroke="#8a9bbd" stroke-width="1.8" />
+              <circle cx="66" cy="52" r="3" fill="#4e628f" />
+            </svg>
+          </div>
+          <h2 class="detail-heading">Día &amp; Hora</h2>
+          <p class="detail-info-primary">DICIEMBRE 12, 2026</p>
+          <p class="detail-info-secondary">SÁBADO · 7:00 PM</p>
+        </article>
+
+        <div class="section-divider" aria-hidden="true">
+          <span></span><i>✦</i><span></span>
+        </div>
+
+        <!-- Location -->
+        <article class="detail-block reveal">
+          <div class="detail-icon">
+            <!-- Faceted Diamond / Location Gem -->
+            <svg viewBox="0 0 64 72" width="52" height="58" aria-hidden="true">
+              <defs>
+                <linearGradient id="gemFacet1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#eef2f9" />
+                  <stop offset="50%" stop-color="#98a8c7" />
+                  <stop offset="100%" stop-color="#1c2b52" />
+                </linearGradient>
+              </defs>
+              <polygon points="32,4 56,24 32,68 8,24" fill="url(#gemFacet1)" stroke="#1b294d" stroke-width="1.5" />
+              <polygon points="32,4 56,24 32,30 8,24" fill="#d9e2f2" opacity="0.7" />
+              <line x1="32" y1="4" x2="32" y2="68" stroke="#1b294d" stroke-width="1" opacity="0.55" />
+              <line x1="8" y1="24" x2="56" y2="24" stroke="#1b294d" stroke-width="1" opacity="0.55" />
+            </svg>
+          </div>
+          <h2 class="detail-heading">Ubicación</h2>
+          <p class="detail-info-secondary">
+            Te esperamos para compartir esta noche especial
+          </p>
+          <a
+            href="https://maps.app.goo.gl/GHW4QkNo954bJy1aA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="pill-btn"
+          >
+            Ver ubicación en mapa
+          </a>
+        </article>
+
+        <div class="section-divider" aria-hidden="true">
+          <span></span><i>✦</i><span></span>
+        </div>
+
+        <!-- RSVP / WhatsApp Confirmation -->
+        <article class="detail-block reveal">
+          <h2 class="detail-heading">Confirma tu asistencia</h2>
+          <p class="detail-info-secondary">
+            Por favor confirma tu asistencia por WhatsApp
+          </p>
+          <button id="open-rsvp-btn" class="pill-btn" type="button">
+            Click aquí
+          </button>
+        </article>
+
+        <!-- Back to top / cover -->
+        <div class="back-home-wrap reveal">
+          <button id="back-to-cover-btn" class="text-link-btn" type="button">
+            Volver al inicio
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MODAL: CONFIRMACIÓN RSVP (WHATSAPP) ==================== -->
+    <div id="rsvp-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="rsvp-title">
+      <div class="modal-card">
+        <p class="modal-intro">
+          Me haría muy feliz contar con tu presencia en este día tan especial.
+          Por favor confirma tu asistencia por WhatsApp.
+        </p>
+
+        <form id="rsvp-form" class="rsvp-form">
+          <h3 id="rsvp-title" class="sr-only">Formulario de confirmación</h3>
+
+          <label class="field-label" for="guest-name">Nombre y Apellido</label>
+          <input
+            id="guest-name"
+            type="text"
+            placeholder="Ej. María Pérez"
+            required
+          />
+
+          <label class="field-label" for="guest-attendance">¿Asistirás a la celebración?</label>
+          <select id="guest-attendance" required>
+            <option value="Sí, asistiré con mucho gusto">Sí, asistiré con mucho gusto</option>
+            <option value="No podré asistir, ¡felicidades!">No podré asistir, ¡muchas felicidades!</option>
+          </select>
+
+          <label class="field-label" for="guest-count">Número de personas</label>
+          <input
+            id="guest-count"
+            type="number"
+            min="1"
+            max="15"
+            value="1"
+            required
+          />
+
+          <label class="field-label" for="guest-message">Mensaje para Alejandra (opcional)</label>
+          <textarea
+            id="guest-message"
+            rows="2"
+            placeholder="¡Muchas felicidades Alejandra!"
+          ></textarea>
+
+          <button type="submit" class="pill-btn submit-btn">
+            Enviar por WhatsApp
+          </button>
+        </form>
+
+        <button id="close-rsvp-btn" class="text-link-btn modal-back-btn" type="button">
+          Volver atrás
+        </button>
+      </div>
+    </div>
+
+    <!-- ==================== MODAL: LIGHTBOX PARA FOTOS ==================== -->
+    <div id="photo-modal" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Vista ampliada de foto">
+      <button id="close-photo-btn" class="lightbox-close" type="button" aria-label="Cerrar foto">&times;</button>
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="" />
+        <p id="lightbox-caption"></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
